@@ -67,7 +67,7 @@ class EJS_GameManager {
                "video_vsync = true\n" +
                "video_smooth = false\n" +
                "fastforward_ratio = 3.0\n" +
-               "rewind_enable = true\n" +
+                (window.EJS_rewindEnabled ? "rewind_enable = true\n" : "") +
                "rewind_granularity = 6\n" +
                "savefile_directory = \"/data/saves\"\n";
     }
@@ -142,8 +142,6 @@ class EJS_GameManager {
         })();
     }
     simulateInput(player, index, value) {
-        console.log(player, index, value);
-
         if (this.EJS.isNetplay) {
             this.EJS.netplay.simulateInput(player, index, value);
             return;
@@ -174,8 +172,9 @@ class EJS_GameManager {
                 this.functions.toggleFastForward(this.EJS.isFastForward ? !value : value);
             }
             if (index === 28) {
-                console.log('rewind!');
-                this.functions.toggleRewind(value);
+                if (window.EJS_rewindEnabled) {
+                    this.functions.toggleRewind(value);
+                }
             }
             return;
         }
