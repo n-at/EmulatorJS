@@ -68,7 +68,7 @@ class EJS_GameManager {
                "video_smooth = false\n" +
                "fastforward_ratio = 3.0\n" +
                 (window.EJS_rewindEnabled ? "rewind_enable = true\n" : "") +
-               "rewind_granularity = 6\n" +
+                (window.EJS_rewindEnabled ? "rewind_granularity = 6\n" : "") +
                "savefile_directory = \"/data/saves\"\n";
     }
     initShaders() {

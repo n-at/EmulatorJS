@@ -1796,11 +1796,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('snes' === this.getControlScheme()) {
             buttons = [
@@ -1816,11 +1811,6 @@ class EmulatorJS {
                 {id: 7, label: 'RIGHT'},
                 {id: 10, label: 'L'},
                 {id: 11, label: 'R'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('n64' === this.getControlScheme()) {
             buttons = [
@@ -1842,11 +1832,6 @@ class EmulatorJS {
                 {id: 22, label: 'C-PAD DOWN'},
                 {id: 21, label: 'C-PAD LEFT'},
                 {id: 20, label: 'C-PAD RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('gba' === this.getControlScheme()) {
             buttons = [
@@ -1860,11 +1845,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('nds' === this.getControlScheme()) {
             buttons = [
@@ -1881,11 +1861,6 @@ class EmulatorJS {
                 {id: 10, label: 'L'},
                 {id: 11, label: 'R'},
                 {id: 14, label: 'Microphone'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('vb' === this.getControlScheme()) {
             buttons = [
@@ -1903,11 +1878,6 @@ class EmulatorJS {
                 {id: 18, label: 'RIGHT D-PAD DOWN'},
                 {id: 17, label: 'RIGHT D-PAD LEFT'},
                 {id: 16, label: 'RIGHT D-PAD RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if (['segaMD', 'segaCD', 'sega32x'].includes(this.getControlScheme())) {
             buttons = [
@@ -1923,11 +1893,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('segaMS' === this.getControlScheme()) {
             buttons = [
@@ -1937,11 +1902,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('segaGG' === this.getControlScheme()) {
             buttons = [
@@ -1952,11 +1912,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('segaSaturn' === this.getControlScheme()) {
             buttons = [
@@ -1973,11 +1928,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('3do' === this.getControlScheme()) {
             buttons = [
@@ -1992,11 +1942,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('atari2600' === this.getControlScheme()) {
             buttons = [
@@ -2013,11 +1958,6 @@ class EmulatorJS {
                 {id: 13, label: 'RIGHT DIFFICULTY B'},
                 {id: 14, label: 'COLOR'},
                 {id: 15, label: 'B/W'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('atari7800' === this.getControlScheme()) {
             buttons = [
@@ -2032,11 +1972,6 @@ class EmulatorJS {
                 {id: 7, label: 'RIGHT'},
                 {id: 10, label: 'LEFT DIFFICULTY'},
                 {id: 11, label: 'RIGHT DIFFICULTY'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('lynx' === this.getControlScheme()) {
             buttons = [
@@ -2049,11 +1984,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else if ('jaguar' === this.getControlScheme()) {
             buttons = [
@@ -2066,11 +1996,6 @@ class EmulatorJS {
                 {id: 5, label: 'DOWN'},
                 {id: 6, label: 'LEFT'},
                 {id: 7, label: 'RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         } else {
             buttons = [
@@ -2098,11 +2023,6 @@ class EmulatorJS {
                 {id: 22, label: 'R STICK DOWN'},
                 {id: 21, label: 'R STICK LEFT'},
                 {id: 20, label: 'R STICK RIGHT'},
-                {id: 24, label: this.localization('QUICK SAVE STATE')},
-                {id: 25, label: this.localization('QUICK LOAD STATE')},
-                {id: 26, label: this.localization('CHANGE STATE SLOT')},
-                {id: 27, label: this.localization('FAST FORWARD')},
-                {id: 28, label: this.localization('REWIND')},
             ];
         }
         if (['arcade', 'mame'].includes(this.getControlScheme())) {
@@ -2112,6 +2032,13 @@ class EmulatorJS {
                 }
             }
         }
+        buttons.push(
+            {id: 24, label: this.localization('QUICK SAVE STATE')},
+            {id: 25, label: this.localization('QUICK LOAD STATE')},
+            {id: 26, label: this.localization('CHANGE STATE SLOT')},
+            {id: 27, label: this.localization('FAST FORWARD')},
+            {id: 28, label: this.localization('REWIND')}
+        );
         //if (_this.statesSupported === false) {
         //    delete buttons[24];
         //    delete buttons[25];
@@ -2388,8 +2315,8 @@ class EmulatorJS {
             24: {},
             25: {},
             26: {},
-            27: {'value': 'o'},
-            28: {'value': 'p'}
+            27: {},
+            28: {},
         },
         1: {},
         2: {},
@@ -2447,7 +2374,7 @@ class EmulatorJS {
         if (this.settingsMenu.style.display !== "none" || this.isPopupOpen()) return;
         const special = [16, 17, 18, 19, 20, 21, 22, 23];
         for (let i=0; i<4; i++) {
-            for (let j=0; j<28; j++) {
+            for (let j=0; j<29; j++) {
                 if (['buttonup', 'buttondown'].includes(e.type) && (this.controls[i][j] && this.controls[i][j].value2 === e.index)) {
                     this.gameManager.simulateInput(i, j, (e.type === 'buttonup' ? 0 : (special.includes(j) ? 0x7fff : 1)));
                 } else if (e.type === "axischanged") {
