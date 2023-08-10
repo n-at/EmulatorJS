@@ -1415,7 +1415,7 @@ class EmulatorJS {
                     playButton.style.display = "none";
                 }
             }
-            this.gameManager.toggleMainLoop(this.paused ? 0 : 1);
+            this.gameManager.pause(this.paused);
             
             //I now realize its not easy to pause it while the cursor is locked, just in case I guess
             if (this.getCore(true) === "nds") {
@@ -2388,7 +2388,7 @@ class EmulatorJS {
             24: {},
             25: {},
             26: {},
-            27: {},
+            27: {'value': 'o'},
             28: {'value': 'p'}
         },
         1: {},

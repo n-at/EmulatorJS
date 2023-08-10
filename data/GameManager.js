@@ -27,7 +27,8 @@ class EJS_GameManager {
             toggleFastForward: this.Module.cwrap('toggle_fastforward', 'null', ['number']),
             setFastForwardRatio: this.Module.cwrap('set_ff_ratio', 'null', ['number']),
             toggleRewind: this.Module.cwrap('toggle_rewind', 'null', ['number']),
-            setRewindGranularity: this.Module.cwrap('set_rewind_granularity', 'null', ['number'])
+            setRewindGranularity: this.Module.cwrap('set_rewind_granularity', 'null', ['number']),
+            togglePause: this.Module.cwrap('toggle_pause', 'null', ['number'])
         }
         this.mkdir("/home");
         this.mkdir("/home/web_user");
@@ -69,6 +70,7 @@ class EJS_GameManager {
                "fastforward_ratio = 3.0\n" +
                 (window.EJS_rewindEnabled ? "rewind_enable = true\n" : "") +
                "rewind_granularity = 6\n" +
+               "menu_enable_widgets = false\n" +
                "savefile_directory = \"/data/saves\"\n";
     }
     initShaders() {
@@ -261,13 +263,6 @@ class EJS_GameManager {
             }, null, false, {responseType: "arraybuffer", method: "GET"});
         })
     }
-    toggleMainLoop(playing) {
-        if (playing) {
-            this.Module.resumeMainLoop();
-        } else {
-            this.Module.pauseMainLoop();
-        }
-    }
     getCoreOptions() {
         return this.functions.getCoreOptions();
     }
@@ -318,6 +313,9 @@ class EJS_GameManager {
     }
     setRewindGranularity(value) {
         this.functions.setRewindGranularity(value);
+    }
+    pause(value) {
+        this.functions.togglePause(value);
     }
 }
 
